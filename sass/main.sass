@@ -1,3 +1,5 @@
+@import vars
+
 html
 	font-size: 10px
 	box-sizing: border-box
@@ -6,13 +8,47 @@ html
 		font-family: 'Fira Sans Condensed', sans-serif
 		font-size: 1.6rem
 
-	.hidden
-		display: none
+.hidden
+	display: none
 
-	.img-respons
-		position: relative
-		display: inline-block
-		max-width: 100%
+.img-respons
+	position: relative
+	display: inline-block
+	max-width: 100%
+
+.h1
+	font-size: 4rem
+	line-height: 120%
+	margin-bottom: 2vh
+
+.subhead
+	font-size: 2.3rem
+	font-weight: 300
+	margin: 0
+
+button:active, button:focus, button:hover
+	outline: none
+
+.base-btn
+	display: inline-block
+	border: none
+	outline: none
+	overflow: hidden
+	background-color: $accent-color
+	color: $text-color
+	font-size: 1.8rem
+	font-weight: 500
+	margin-top: 4vh
+	padding: 10px 30px
+	border-radius: 3rem
+	&:hover
+		transform: scale(1.03)
+		transition: all .3s
+	&:active
+		background-color: darken($accent-color, 15%)
+		color: darken($text-color, 20%)
+		transform: scale(1)
+		transition: transform .1s
 
 @import header
 

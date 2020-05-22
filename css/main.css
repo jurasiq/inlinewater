@@ -9,20 +9,68 @@ html body {
   font-size: 1.6rem;
 }
 
-html .hidden {
+.hidden {
   display: none;
 }
 
-html .img-respons {
+.img-respons {
   position: relative;
   display: inline-block;
   max-width: 100%;
 }
 
+.h1 {
+  font-size: 4rem;
+  line-height: 120%;
+  margin-bottom: 2vh;
+}
+
+.subhead {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+button:active, button:focus, button:hover {
+  outline: none;
+}
+
+.base-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  background-color: #ffc01e;
+  color: #444444;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 4vh;
+  padding: 10px 30px;
+  border-radius: 3rem;
+}
+
+.base-btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.base-btn:active {
+  background-color: #d19600;
+  color: #111111;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
 .header-main .topmenu {
   padding: 20px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#BCDDFC), to(#FFFFFF));
-  background: linear-gradient(180deg, #BCDDFC 0%, #FFFFFF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#BCDDFC));
+  background: linear-gradient(180deg, #FFFFFF 0%, #BCDDFC 100%);
 }
 
 .header-main .topmenu .nav ul {
@@ -34,9 +82,46 @@ html .img-respons {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
+}
+
+.header-main .topmenu .nav ul li {
+  padding: 4px 8px;
 }
 
 .header-main .topmenu .nav ul li a {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #444444;
+  font-weight: 500;
+}
+
+.header-main .topmenu .phone {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #064ea7;
+  text-align: center;
+}
+
+.header-main .header_baner {
+  position: relative;
+  background-image: url(../img/header_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 6.5vh 0;
+}
+
+.header-main .header_baner__overlay {
+  position: absolute;
+  height: 0.6rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(6, 78, 167, 0.65);
+}
+
+.header-main .header_baner .h1 {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
 /*# sourceMappingURL=main.css.map */

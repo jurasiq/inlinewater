@@ -1,14 +1,42 @@
 .header-main
-  .topmenu
-    padding: 20px 0
-    background: linear-gradient(180deg, #BCDDFC 0%, #FFFFFF 100%)
-    .nav
-      ul
-        display: flex
-        justify-content: space-around
-        margin: 0
-        padding: 0
-        list-style: none
-        li
-          a
-            font-size: 2rem
+	.topmenu
+		padding: 20px 0
+		background: linear-gradient(180deg, #FFFFFF 0%, #BCDDFC 100%)
+		.nav
+			ul
+				display: flex
+				justify-content: space-around
+				margin: 0
+				padding: 0
+				list-style: none
+				text-align: center
+				li
+					padding: 4px 8px
+					a
+						font-size: 1.8rem
+						color: $text-color
+						font-weight: 500
+		.phone
+			font-size: 2.5rem
+			font-weight: 700
+			color: $dark-blue
+			text-align: center
+	.header_baner
+		position: relative
+		background-image: url(../img/header_bg.jpg)
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		color: #fff
+		padding: 6.5vh 0
+		&__overlay
+			position: absolute
+			height: 0.6rem
+			width: 100%
+			top: 0
+			left: 0
+			background-color: rgba(6, 78, 167, 0.65)
+
+		.h1
+			text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55)
+		
