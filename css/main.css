@@ -1,3 +1,7 @@
+.st {
+  padding: 5vh 0;
+}
+
 html {
   font-size: 10px;
   -webkit-box-sizing: border-box;
@@ -141,5 +145,9 @@ button:active, button:focus, button:hover {
 .header-main .advantages .advantage-item img {
   max-width: 250px;
   display: inline-block;
+}
+
+.about .about_text {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
