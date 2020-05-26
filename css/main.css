@@ -36,6 +36,12 @@ html body {
   margin: 0;
 }
 
+.responseimg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
 button:active, button:focus, button:hover {
   outline: none;
 }
