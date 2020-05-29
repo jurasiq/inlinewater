@@ -107,10 +107,14 @@ button:active, button:focus, button:hover {
 }
 
 .header-main .topmenu .phone {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #064ea7;
   text-align: center;
+}
+
+.header-main .topmenu .phone .icon-phone {
+  color: #349b04;
 }
 
 .header-main .header_baner {
@@ -153,7 +157,78 @@ button:active, button:focus, button:hover {
   display: inline-block;
 }
 
+.about {
+  background-color: #ebf6ff;
+}
+
 .about .about_text {
+  position: relative;
+  display: inline-block;
+  font-size: 2.2rem;
+  padding-left: 2.2rem;
+  line-height: 120%;
+  color: #444444;
+  margin-bottom: 0;
+  margin: 1.5rem 0 0;
+}
+
+.about .about_text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #064ea7;
+}
+
+.about .h2 {
+  font-size: 2.8rem;
+  color: #064ea7;
+  margin: 4rem 0 1rem;
+}
+
+.about .comparison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0 3rem;
+}
+
+.about .comparison ul {
+  position: relative;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.about .comparison .positive li {
+  padding-left: 3rem;
+  line-height: 185%;
+}
+
+.about .comparison .positive li::before {
+  content: '\e800';
+  font-family: fontello;
+  position: absolute;
+  left: 0;
+  color: #36aa00;
+}
+
+.about .comparison .negative li {
+  padding-left: 3rem;
+  line-height: 185%;
+}
+
+.about .comparison .negative li::before {
+  content: '\e801';
+  font-family: fontello;
+  position: absolute;
+  left: 0;
+  color: #e60000;
 }
 /*# sourceMappingURL=main.css.map */

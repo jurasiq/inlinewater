@@ -1,4 +1,54 @@
 .about
-  .about_text
-    margin: 0
-    
+	background-color: $light-blue
+	.about_text
+		position: relative
+		display: inline-block
+		font-size: 2.2rem
+		padding-left: 2.2rem
+		line-height: 120%
+		color: $text-color
+		margin-bottom: 0
+		margin: 1.5rem 0 0
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 8px
+			width: 8px
+			height: 8px
+			background: $dark-blue
+	.h2
+		font-size: 2.8rem
+		color: $dark-blue
+		margin: 4rem 0 1rem
+	.comparison
+		display: flex
+		justify-content: space-between
+		padding: 1rem 0 3rem
+		ul
+			position: relative
+			list-style-type: none
+			margin: 0
+			padding: 0
+		.positive
+			li
+				padding-left: 3rem
+				line-height: 185%
+				&::before
+					content: '\e800'
+					font-family: fontello
+					position: absolute
+					left: 0
+					color: $green
+		.negative
+			li
+				padding-left: 3rem
+				line-height: 185%
+				list-style-type: 
+				&::before
+					content: '\e801'
+					font-family: fontello
+					position: absolute
+					left: 0
+					color: $red
