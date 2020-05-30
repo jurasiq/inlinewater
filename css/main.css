@@ -12,6 +12,7 @@ html body {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.6rem;
   color: #444444;
+  padding-top: 84px;
 }
 
 .hidden {
@@ -78,10 +79,29 @@ button:active, button:focus, button:hover {
   transition: transform .1s, -webkit-transform .1s;
 }
 
+.header-main {
+  position: relative;
+}
+
 .header-main .topmenu {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
   padding: 20px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#BCDDFC));
   background: linear-gradient(180deg, #FFFFFF 0%, #BCDDFC 100%);
+  z-index: 10;
+}
+
+.header-main .topmenu .logo {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.header-main .topmenu .logo img {
+  max-width: 220px;
 }
 
 .header-main .topmenu .nav ul {
@@ -117,6 +137,15 @@ button:active, button:focus, button:hover {
   color: #349b04;
 }
 
+.header-main .topmenu_overlay {
+  position: absolute;
+  height: 8px;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  background-color: rgba(6, 78, 167, 0.65);
+}
+
 .header-main .header_baner {
   position: relative;
   background-image: url(../img/header_bg.jpg);
@@ -125,15 +154,6 @@ button:active, button:focus, button:hover {
   background-repeat: no-repeat;
   color: #fff;
   padding: 6.5vh 0;
-}
-
-.header-main .header_baner__overlay {
-  position: absolute;
-  height: 0.6rem;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(6, 78, 167, 0.65);
 }
 
 .header-main .header_baner .h1 {
@@ -159,6 +179,12 @@ button:active, button:focus, button:hover {
 
 .about {
   background-color: #ebf6ff;
+}
+
+.about .aboutimg {
+  width: auto;
+  max-height: 630px;
+  margin: auto;
 }
 
 .about .about_text {
