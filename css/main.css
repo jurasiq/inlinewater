@@ -263,4 +263,23 @@ button:active, button:focus, button:hover {
   left: 0;
   color: #e60000;
 }
+
+.howwork .steps {
+  margin: 3vh 0;
+}
+
+.cleanstep-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
