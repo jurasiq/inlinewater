@@ -9,8 +9,8 @@ html {
 }
 
 html body {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.7rem;
   color: #444444;
   padding-top: 84px;
 }
@@ -26,21 +26,27 @@ html body {
 }
 
 .h1 {
-  font-size: 4rem;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 4.5rem;
   line-height: 120%;
   margin-bottom: 2vh;
 }
 
 .h2 {
+  font-family: 'Fira Sans Condensed', sans-serif;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #064ea7;
   margin: 4rem 0 1rem;
 }
 
+.h3 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 2.5rem;
+}
+
 .subhead {
   font-size: 2.3rem;
-  font-weight: 300;
   margin: 0;
 }
 
@@ -61,8 +67,8 @@ button:active, button:focus, button:hover {
   overflow: hidden;
   background-color: #ffc01e;
   color: #444444;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.8rem;
-  font-weight: 500;
   margin-top: 4vh;
   padding: 10px 30px;
   border-radius: 3rem;
@@ -140,6 +146,7 @@ button:active, button:focus, button:hover {
 }
 
 .header-main .topmenu .phone {
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
   color: #064ea7;
@@ -196,14 +203,14 @@ button:active, button:focus, button:hover {
 
 .about .aboutimg {
   width: auto;
-  max-height: 630px;
+  max-height: 650px;
   margin: auto;
 }
 
 .about .about_text {
   position: relative;
   display: inline-block;
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding-left: 2.2rem;
   line-height: 120%;
   color: #444444;
@@ -281,5 +288,40 @@ button:active, button:focus, button:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.cleanstep-item .item-img {
+  max-width: 230px;
+  border: 4px solid #36aa00;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.cleanstep-item .item-img img {
+  display: block;
+  width: 100%;
+}
+
+.cleanstep-item .item-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #064ea7;
+  margin-bottom: 1rem;
+}
+
+.catalog {
+  background-color: #e7e7e7;
+}
+
+.catalog-slider_item {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.catalog-slider_item .model-image {
+  display: inline-block;
+  height: 300px;
 }
 /*# sourceMappingURL=main.css.map */
