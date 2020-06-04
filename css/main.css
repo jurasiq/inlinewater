@@ -92,6 +92,38 @@ button:active, button:focus, button:hover {
   transition: transform .1s, -webkit-transform .1s;
 }
 
+.order-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  background-color: #36aa00;
+  text-align: center;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.8rem;
+  padding: 6px 20px;
+  border-radius: 3rem;
+}
+
+.order-btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.order-btn:active {
+  background-color: #1e5e00;
+  color: #cccccc;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
 .header-main {
   position: relative;
 }
@@ -312,16 +344,81 @@ button:active, button:focus, button:hover {
 
 .catalog {
   background-color: #e7e7e7;
+  height: 90vh;
 }
 
 .catalog-slider_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fff;
   padding: 20px;
+  max-width: 320px;
+}
+
+.catalog-slider_item .model-name {
   text-align: center;
 }
 
 .catalog-slider_item .model-image {
-  display: inline-block;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.catalog-slider_item .model-image img {
   height: 300px;
+}
+
+.catalog-slider_item .model-parametr {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.catalog-slider_item .model-parametr li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #858585;
+  padding: 4px 0 0;
+}
+
+.catalog-slider_item .model-parametr li span {
+  display: inline-block;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: left;
+}
+
+.catalog-slider_item .model-parametr li p {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+
+.catalog-slider_item .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5rem;
+}
+
+.catalog-slider_item .order .rent {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-decoration: underline;
+  color: #ffc01e;
 }
 /*# sourceMappingURL=main.css.map */

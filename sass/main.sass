@@ -68,6 +68,27 @@ button:active, button:focus, button:hover
 		transform: scale(1)
 		transition: transform .1s
 
+.order-btn
+	display: inline-block
+	border: none
+	outline: none
+	overflow: hidden
+	background-color: $green
+	text-align: center
+	color: #fff
+	font-family: 'Fira Sans Condensed', sans-serif
+	font-size: 1.8rem
+	padding: 6px 20px
+	border-radius: 3rem
+	&:hover
+		transform: scale(1.03)
+		transition: all .3s
+	&:active
+		background-color: darken($green, 15%)
+		color: darken(#fff, 20%)
+		transform: scale(1)
+		transition: transform .1s
+
 @import header
 @import about
 @import howwork
