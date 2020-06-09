@@ -1,5 +1,5 @@
 .st {
-  padding: 5vh 0;
+  padding: 4vh 0;
 }
 
 html {
@@ -37,7 +37,7 @@ html body {
   text-align: center;
   font-size: 3rem;
   color: #064ea7;
-  margin: 4rem 0 1rem;
+  margin: 3rem 0;
 }
 
 .h3 {
@@ -345,6 +345,8 @@ button:active, button:focus, button:hover {
 .catalog {
   background-color: #e7e7e7;
   height: 90vh;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .catalog-slider_item {
@@ -356,8 +358,8 @@ button:active, button:focus, button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
+  width: 320px;
   padding: 20px;
-  max-width: 320px;
 }
 
 .catalog-slider_item .model-name {
@@ -370,7 +372,8 @@ button:active, button:focus, button:hover {
 }
 
 .catalog-slider_item .model-image img {
-  height: 300px;
+  display: inline-block;
+  max-width: 160px;
 }
 
 .catalog-slider_item .model-parametr {
@@ -420,5 +423,23 @@ button:active, button:focus, button:hover {
   font-family: 'Fira Sans Condensed', sans-serif;
   text-decoration: underline;
   color: #ffc01e;
+}
+
+.owl-nav {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */

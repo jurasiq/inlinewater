@@ -1,44 +1,60 @@
 .catalog
 	background-color: #e7e7e7
 	height: 90vh
-.catalog-slider
-	&_item
-		display: flex
-		flex-direction: column
-		background-color: #fff
-		padding: 20px
-		max-width: 320px
-		.model-name
-			text-align: center
-		.model-image
-			margin-bottom: 6px
-			text-align: center
-			img
-				height: 300px
-		.model-parametr
-			list-style: none
-			margin: 0
-			padding: 0
-			font-size: 1.4rem
-			li
-				display: flex
-				justify-content: space-between
-				border-bottom: 1px solid #acacac
-				padding: 6px 0 0
-				span
-					display: inline-block	
-					font-family: 'Fira Sans Condensed', sans-serif
-					text-align: left
-				p
-					display: inline-block
-					text-align: left
-					margin: 0
-		.order
+	padding-left: 30px
+	padding-right: 30px
+
+.catalog-slider_item
+	display: flex
+	flex-direction: column
+	background-color: #fff
+	width: 320px
+	padding: 20px
+	.model-name
+		text-align: center
+	.model-image
+		margin-bottom: 6px
+		text-align: center
+		img
+			display: inline-block
+			max-width: 160px
+	.model-parametr
+		list-style: none
+		margin: 0
+		padding: 0
+		font-size: 1.4rem
+		li
 			display: flex
 			justify-content: space-between
-			align-items: center
-			margin-top: 2.5rem
-			.rent
+			border-bottom: 1px solid #acacac
+			padding: 6px 0 0
+			span
+				display: inline-block	
 				font-family: 'Fira Sans Condensed', sans-serif
-				text-decoration: underline
-				color: $accent-color
+				text-align: left
+			p
+				display: inline-block
+				text-align: left
+				margin: 0
+	.order
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 2.5rem
+		.rent
+			font-family: 'Fira Sans Condensed', sans-serif
+			text-decoration: underline
+			color: $accent-color
+
+.owl-nav
+	position: relative
+	max-width: 600px
+	margin: 20px auto
+	.owl-prev
+		position: absolute
+		top: 0
+		left: 0
+	.owl-next
+		position: absolute
+		top: 0
+		right: 0
