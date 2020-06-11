@@ -4,28 +4,31 @@
 		width: auto
 		max-height: 650px
 		margin: auto
-	.about_text
-		position: relative
-		display: inline-block
-		font-size: 2rem
-		padding-left: 2.2rem
-		line-height: 120%
-		color: $text-color
-		margin-bottom: 0
-		margin: 1.5rem 0 0
-		&::before
-			content: ''
-			display: block
-			position: absolute
-			left: 0
-			top: 8px
-			width: 8px
-			height: 8px
-			background: $dark-blue
+	.about-block
+		margin-top: 1.5rem
+		margin-left: 2rem
+		.about_text
+			position: relative
+			display: inline-block
+			font-size: 2rem
+			padding-left: 2.2rem
+			line-height: 120%
+			color: $text-color
+			margin-bottom: 1.8rem
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 8px
+				width: 8px
+				height: 8px
+				background: $dark-blue
 
 	.comparison
 		display: flex
 		justify-content: space-around
+		margin-left: 20px
 		padding: 1rem 0 3rem
 		ul
 			position: relative
