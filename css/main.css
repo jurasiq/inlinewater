@@ -508,4 +508,42 @@ button:active, button:focus, button:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+.stage-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.stage-item_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 86px;
+  height: 86px;
+  font-size: 4.5rem;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  border: 4px dashed #36aa00;
+  border-radius: 50%;
+  color: #064ea7;
+  margin-right: 3rem;
+}
+
+.stage-item_description {
+  color: #064ea7;
+  font-size: 3rem;
+}
 /*# sourceMappingURL=main.css.map */
