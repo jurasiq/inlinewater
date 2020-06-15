@@ -526,6 +526,7 @@ button:active, button:focus, button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -542,8 +543,72 @@ button:active, button:focus, button:hover {
   margin-right: 3rem;
 }
 
+.stage-item_icon::before {
+  content: '';
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: -30px;
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border-right: 4px solid #36aa00;
+  border-bottom: 4px solid #36aa00;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.stage-item_icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  margin: 0 auto;
+  width: 4px;
+  height: 30px;
+  -webkit-transform: translateX(-0.5px);
+          transform: translateX(-0.5px);
+  background-color: #36aa00;
+}
+
 .stage-item_description {
-  color: #064ea7;
+  color: #36aa00;
   font-size: 3rem;
+}
+
+.why {
+  background: -webkit-gradient(linear, left top, right top, from(#ebf6ff), color-stop(15%, #FFFFFF), color-stop(85%, #FFFFFF), to(#ebf6ff));
+  background: linear-gradient(90deg, #ebf6ff 0%, #FFFFFF 15%, #FFFFFF 85%, #ebf6ff 100%);
+  text-align: center;
+}
+
+.why-item {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.why-item .why-descr {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.why-item .why-digit {
+  font-size: 2.5rem;
+  color: #064ea7;
+}
+
+.why-item .why-digit span {
+  display: block;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  max-width: 40%;
+  font-size: 6rem;
+  margin: 0 auto;
+  padding: 30px 0 20px;
+  border-top: 6px solid #36aa00;
+}
+
+.why-item .base-btn {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
