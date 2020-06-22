@@ -3,7 +3,6 @@ $(document).ready(function(){
 	$('#catalog-slider').owlCarousel({
 		loop: true,
 		margin: 30,
-		responsiveClass: true,
 		responsive:{
 			0:{
 				items: 1,
@@ -22,7 +21,7 @@ $(document).ready(function(){
 	$('#brand-slider').owlCarousel({
 		loop: true,
 		margin: 30,
-		responsiveClass: true,
+		autoplay: true,
 		responsive:{
 			0:{
 				items: 1,
