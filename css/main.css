@@ -693,10 +693,11 @@ button:active, button:focus, button:hover {
   background-color: #bdbdbd;
   border: none;
   border-bottom: 1px solid #fff;
-  margin-bottom: 10px;
+  border-radius: 4px;
+  margin-bottom: 2rem;
 }
 
 .footer .base-btn {
-  margin-top: 1rem;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
