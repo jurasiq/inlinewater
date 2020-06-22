@@ -501,11 +501,30 @@
 						<p><i class="icon-phone"></i> 8 (999) 244-25-42</p>
 						<p><i class="icon-mail"></i> support@inlinewater.ru</p>
 					</div>
-					<div class="col-lg-6"></div>
+					<div class="col-lg-6">
+						<form id="footer-form" class="footer_form">
+							<h4 class="h4">Заполните форму, мы вам перезвоним:</h4>
+							<input type="text" name="name" placeholder="Ваше имя" class="form-input"><br>
+							<input type="tel" name="phone" placeholder="Номер телефона" class="form-input"><br>
+							<button type="submit" class="base-btn">отправить</button>
+						</form>
+					</div>
 					<div class="col-lg-2"></div>
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal-overlay d-none">
+			<div class="modal modal--1" data-target="callback-form">
+				<button class="btn modal-close" onclick="closeModal(this)"></button>
+				<form id="callback-form" class="modalform">
+					<h2 class="h2-b">Оставьте свой номер, <br>мы перезвоним!</h2>
+					<input type="text" name="name" placeholder="Имя" class="form-input">
+					<input type="tel" name="phone" placeholder="Телефон" class="form-input">
+					<button type="submit" class="base-btn">отправить</button>
+				</form>
+			</div>
+		</div>
 
 	</div>
 

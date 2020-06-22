@@ -686,4 +686,17 @@ button:active, button:focus, button:hover {
 .footer .h4 {
   margin-bottom: 2rem;
 }
+
+.footer_form .form-input {
+  width: 55%;
+  padding: 6px 12px;
+  background-color: #bdbdbd;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.footer .base-btn {
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
