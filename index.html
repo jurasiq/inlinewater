@@ -32,14 +32,15 @@
 						<div class="col-lg-2"><a href="#" class="logo">
 								<img src="img/logo_inlinewater.svg" alt="InlineWater"></a>
 						</div>
-						<div class="col-lg-8">
+						<div class="col-lg-8 d-none d-lg-block">
 							<nav class="nav">
 								<ul>
-									<li><a href="#">Особенности</a></li>
-									<li><a href="#">Каталог</a></li>
-									<li><a href="#">Преимущества</a></li>
-									<li><a href="#">Схема работы</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li><a href="#osobennosti" data-target="anchor">Особенности</a></li>
+									<li><a href="#catalog" data-target="anchor">Каталог</a></li>
+									<li><a href="#questions" data-target="anchor">Вопросы</a></li>
+									<li><a href="#stages" data-target="anchor">Схема работы</a></li>
+									<li><a href="#why" data-target="anchor">Преимущества</a></li>
+									<li><a href="#googlemap" data-target="anchor">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -89,7 +90,7 @@
 			</div>
 		</header>
 
-		<section class="st about">
+		<section class="st about" id="osobennosti">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="col-2 text-center">
@@ -194,7 +195,7 @@
 			</div>
 		</section>
 
-		<section class="st catalog">
+		<section class="st catalog" id="catalog">
 			<h2 class="h2">Модельный ряд пурифайеров:</h2>
 			<div class="catalog-slider owl-carousel owl-theme" id="catalog-slider">
 
@@ -331,7 +332,7 @@
 			</div>
 		</section>
 
-		<section class="st questions">
+		<section class="st questions" id="questions">
 			<h2 class="h2">Мы ответим на все ваши вопросы</h2>
 			<div class="container">
 				<div class="row justify-content-center">
@@ -383,7 +384,7 @@
 			</div>
 		</section>
 
-		<section class="st stages">
+		<section class="st stages" id="stages">
 			<h2 class="h2">Как мы работаем?</h2>
 			<div class="stages-wrap">
 				<div class="container-fluid">
@@ -424,7 +425,7 @@
 			</div>
 		</section>
 
-		<section class="st why">
+		<section class="st why" id="why">
 			<h2 class="h2">Почему более 1700 клиентов выбрали нас?</h2>
 			<div class="container-fluid">
 				<div class="row justify-content-center">
@@ -487,21 +488,26 @@
 			</div>
 		</section>
 
-		<section class="googlemap">
+		<section class="googlemap" id="googlemap">
 			<div class="gmap">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.801432529986!2d30.358130660505815!3d59.922138063790214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631b16adfdfaf%3A0xc5fdfe8c4eb5bf51!2z0JvQuNCz0L7QstGB0LrQuNC5INC_0YAuLCA3MCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTA0MA!5e0!3m2!1sru!2sru!4v1592311389195!5m2!1sru!2sru" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 		</section>
 
 		<footer class="footer">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-lg-4">
-						<h4 class="h4">Наши контакты:</h4>
-						<p><i class="icon-phone"></i> 8 (999) 244-25-42</p>
-						<p><i class="icon-mail"></i> support@inlinewater.ru</p>
+					<div class="col-lg-5">
+						<div class="contacts">
+							<h4 class="h4">Наши контакты:</h4>
+							<p><i class="icon-phone"></i> 8 (999) 244-25-42</p>
+							<p><i class="icon-mail"></i> support@inlinewater.ru</p>
+						</div>
+						<div class="copyright">
+							<p>© 2020 – Inlinewater.ru | Все права защищены.</p>
+						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-5">
 						<form id="footer-form" class="footer_form">
 							<h4 class="h4">Заполните форму, мы вам перезвоним:</h4>
 							<input type="text" name="name" placeholder="Ваше имя" class="form-input"><br>
@@ -509,7 +515,14 @@
 							<button type="submit" class="base-btn">отправить</button>
 						</form>
 					</div>
-					<div class="col-lg-2"></div>
+					<div class="col-lg-2">
+						<h4 class="h4">Мы в соцсетях:</h4>
+						<div class="socialgroup">
+							<a class="social-item" href="#"><i class="icon-vkontakte"></i></a>
+							<a class="social-item" href="#"><i class="icon-facebook-squared"></i></a>
+							<a class="social-item" href="#"><i class="icon-instagram"></i></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
