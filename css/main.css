@@ -424,7 +424,6 @@ button:active, button:focus, button:hover {
 }
 
 .catalog {
-  height: 90vh;
   background-color: #e7e7e7;
   padding-left: 30px;
   padding-right: 30px;
@@ -440,7 +439,7 @@ button:active, button:focus, button:hover {
           flex-direction: column;
   background-color: #fff;
   width: 320px;
-  padding: 20px;
+  padding: 16px;
 }
 
 .catalog .catalog-slider_item .model-name {
@@ -454,7 +453,7 @@ button:active, button:focus, button:hover {
 
 .catalog .catalog-slider_item .model-image img {
   display: inline-block;
-  max-width: 280px;
+  max-width: 250px;
 }
 
 .catalog .catalog-slider_item .model-parametr {
@@ -472,7 +471,7 @@ button:active, button:focus, button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #acacac;
-  padding: 6px 0 0;
+  padding: 4px 0 0;
 }
 
 .catalog .catalog-slider_item .model-parametr li span {
@@ -481,10 +480,29 @@ button:active, button:focus, button:hover {
   text-align: left;
 }
 
-.catalog .catalog-slider_item .model-parametr li p {
-  display: inline-block;
-  text-align: left;
-  margin: 0;
+.catalog .catalog-slider_item .rentprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+  font-size: 1.8rem;
+  text-align: right;
+  color: #064ea7;
+}
+
+.catalog .catalog-slider_item .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #666666;
 }
 
 .catalog .catalog-slider_item .order {
@@ -497,7 +515,7 @@ button:active, button:focus, button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .catalog .catalog-slider_item .order .rent {
@@ -507,9 +525,10 @@ button:active, button:focus, button:hover {
 }
 
 .catalog .catalog-slider .owl-nav {
-  position: relative;
-  max-width: 600px;
-  margin: 20px auto;
+  position: absolute;
+  top: -60px;
+  margin: 0;
+  width: 100%;
 }
 
 .catalog .catalog-slider .owl-nav .owl-prev {
@@ -519,7 +538,7 @@ button:active, button:focus, button:hover {
 }
 
 .catalog .catalog-slider .owl-nav .owl-prev span {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #064ea7;
 }
 
@@ -530,7 +549,7 @@ button:active, button:focus, button:hover {
 }
 
 .catalog .catalog-slider .owl-nav .owl-next span {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #064ea7;
 }
 

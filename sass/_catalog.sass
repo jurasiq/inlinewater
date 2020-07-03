@@ -1,5 +1,4 @@
 .catalog
-	height: 90vh
 	background-color: #e7e7e7
 	padding-left: 30px
 	padding-right: 30px
@@ -9,7 +8,7 @@
 			flex-direction: column
 			background-color: #fff
 			width: 320px
-			padding: 20px
+			padding: 16px
 			.model-name
 				text-align: center
 			.model-image
@@ -17,7 +16,7 @@
 				text-align: center
 				img
 					display: inline-block
-					max-width: 280px
+					max-width: 250px
 			.model-parametr
 				list-style: none
 				margin: 0
@@ -27,20 +26,29 @@
 					display: flex
 					justify-content: space-between
 					border-bottom: 1px solid #acacac
-					padding: 6px 0 0
+					padding: 4px 0 0
 					span
 						display: inline-block	
 						font-family: 'Fira Sans Condensed', sans-serif
 						text-align: left
-					p
-						display: inline-block
-						text-align: left
-						margin: 0
+			.rentprice
+				display: flex
+				justify-content: space-between
+				margin-top: 8px
+				font-size: 1.8rem
+				text-align: right
+				color: $dark-blue
+			.price
+				display: flex
+				justify-content: space-between
+				font-size: 1.4rem
+				text-align: right
+				color: #666666
 			.order
 				display: flex
 				justify-content: space-between
 				align-items: center
-				margin-top: 2.5rem
+				margin-top: 1.5rem
 				.rent
 					font-family: 'Fira Sans Condensed', sans-serif
 					text-decoration: underline
@@ -48,20 +56,21 @@
 
 	.catalog-slider
 		.owl-nav
-			position: relative
-			max-width: 600px
-			margin: 20px auto
+			position: absolute
+			top: -60px
+			margin: 0
+			width: 100%
 			.owl-prev
 				position: absolute
 				top: 0
 				left: 0
 				span
-					font-size: 4rem
+					font-size: 5rem
 					color: $dark-blue
 			.owl-next
 				position: absolute
 				top: 0
 				right: 0
 				span
-					font-size: 4rem
+					font-size: 5rem
 					color: $dark-blue
