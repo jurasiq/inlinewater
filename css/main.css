@@ -553,6 +553,10 @@ button:active, button:focus, button:hover {
   color: #064ea7;
 }
 
+.catalog .catalog-slider .owl-dots {
+  margin-top: 2rem;
+}
+
 .questions {
   background: -webkit-gradient(linear, left top, right top, from(#e7f2db), color-stop(15%, #FFFFFF), color-stop(85%, #FFFFFF), to(#e7f2db));
   background: linear-gradient(90deg, #e7f2db 0%, #FFFFFF 15%, #FFFFFF 85%, #e7f2db 100%);
