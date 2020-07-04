@@ -443,10 +443,12 @@ button:active, button:focus, button:hover {
 }
 
 .catalog .catalog-slider_item .model-name {
+  color: #444444;
   text-align: center;
 }
 
 .catalog .catalog-slider_item .model-image {
+  display: block;
   margin-bottom: 6px;
   text-align: center;
 }
