@@ -151,7 +151,16 @@ button:active, button:focus, button:hover {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
   z-index: 11;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .modal-overlay .modal {
@@ -204,7 +213,11 @@ button:active, button:focus, button:hover {
   height: 91vh;
 }
 
-.header-main .topmenu {
+.header-second {
+  height: 1rem;
+}
+
+.topmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,17 +234,17 @@ button:active, button:focus, button:hover {
   z-index: 10;
 }
 
-.header-main .topmenu .logo {
+.topmenu .logo {
   display: block;
   margin: auto;
   text-align: center;
 }
 
-.header-main .topmenu .logo img {
+.topmenu .logo img {
   max-width: 220px;
 }
 
-.header-main .topmenu .nav ul {
+.topmenu .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,17 +256,17 @@ button:active, button:focus, button:hover {
   text-align: center;
 }
 
-.header-main .topmenu .nav ul li {
+.topmenu .nav ul li {
   padding: 4px 8px;
 }
 
-.header-main .topmenu .nav ul li a {
+.topmenu .nav ul li a {
   font-size: 1.8rem;
   color: #444444;
   font-weight: 500;
 }
 
-.header-main .topmenu .phone {
+.topmenu .phone {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -261,11 +274,11 @@ button:active, button:focus, button:hover {
   text-align: center;
 }
 
-.header-main .topmenu .phone .icon-phone {
+.topmenu .phone .icon-phone {
   color: #349b04;
 }
 
-.header-main .topmenu_overlay {
+.topmenu_overlay {
   position: absolute;
   height: 8px;
   bottom: -8px;
@@ -557,6 +570,171 @@ button:active, button:focus, button:hover {
 
 .catalog .catalog-slider .owl-dots {
   margin-top: 2rem;
+}
+
+.catalog_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  max-width: 320px;
+  padding: 16px;
+}
+
+.catalog_item .model-name {
+  color: #444444;
+  text-align: center;
+}
+
+.catalog_item .model-image {
+  display: block;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.catalog_item .model-image img {
+  display: inline-block;
+  max-width: 320px;
+}
+
+.catalog_item .model-parametr {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.catalog_item .model-parametr li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #acacac;
+  padding: 4px 0 0;
+}
+
+.catalog_item .model-parametr li span {
+  display: inline-block;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: left;
+}
+
+.catalog_item .rentprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+  font-size: 1.8rem;
+  text-align: right;
+  color: #064ea7;
+}
+
+.catalog_item .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #666666;
+}
+
+.catalog_item .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.catalog_item .order .rent {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-decoration: underline;
+  color: #ffc01e;
+}
+
+.product-desc .model-parametr {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.product-desc .model-parametr li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #acacac;
+  padding: 4px 0 0;
+}
+
+.product-desc .model-parametr li span {
+  display: inline-block;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: left;
+}
+
+.product-desc .rentprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+  font-size: 1.8rem;
+  text-align: right;
+  color: #064ea7;
+}
+
+.product-desc .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #666666;
+}
+
+.product-desc .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.product-desc .order .rent {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-decoration: underline;
+  color: #ffc01e;
 }
 
 .questions {

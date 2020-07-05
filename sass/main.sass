@@ -108,7 +108,13 @@ button:active, button:focus, button:hover
 	right: 0
 	bottom: 0
 	background-color: rgba(0, 0, 0, 0.8)
+	opacity: 0
+	visibility: hidden
 	z-index: 11
+	&--visible
+		opacity: 1
+		visibility: visible
+		transition: all 0.3s ease-in-out
 	.modal
 		position: absolute
 		max-width: 500px
