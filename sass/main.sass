@@ -9,7 +9,7 @@ html
 		font-size: 1.7rem
 		line-height: 140%
 		color: $text-color
-		padding-top: 84px
+		padding-top: 71px
 
 .hidden
 	display: none
@@ -19,14 +19,18 @@ html
 	display: inline-block
 	max-width: 100%
 
-.text-right
-	text-align: right
+.text-center
+	text-align: center
+
+a
+	color: $dark-blue
 
 .h1
 	font-family: 'Fira Sans Condensed', sans-serif
-	font-size: 4.5rem
+	font-size: 4rem
 	line-height: 120%
 	margin-bottom: 2vh
+	color: $text-color
 
 .h2
 	font-family: 'Fira Sans Condensed', sans-serif
@@ -45,8 +49,10 @@ html
 	font-size: 1.8rem
 
 .subhead
-	font-size: 2.3rem
-	margin: 0
+	font-size: 2.2rem
+	line-height: 120%
+	color: $text-color
+	margin-bottom: 0.8rem
 
 .responseimg
 	display: block
@@ -65,7 +71,7 @@ button:active, button:focus, button:hover
 	color: $text-color
 	font-family: 'Fira Sans Condensed', sans-serif
 	font-size: 1.8rem
-	margin-top: 4vh
+	margin-top: 2rem
 	padding: 10px 30px
 	border-radius: 3rem
 	&:hover
@@ -122,6 +128,9 @@ button:active, button:focus, button:hover
 		background-color: #fff
 		text-align: center
 		border-radius: 8px
+		display: none
+		&--visible
+			display: block
 		.modal-close
 			position: absolute
 			display: flex

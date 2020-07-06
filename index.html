@@ -53,13 +53,16 @@
 			</div>
 
 			<div class="header_baner">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-6">
-							<h1 class="h1">Неограниченный источник чистой питьевой воды!</h1>
-							<p class="subhead">Установим пурифайер и сэкономим 50% ваших денег на доставке бутилированной воды.
-								<br>Надёжные пурифайеры с ультрафиолетовой лампой. <br>100% защита от бактерий.</p>
-							<button class="btn base-btn" data-path="callback-form">Получить бесплатно на 14 дней</button>
+						<div class="col-12 offset-lg-1 col-lg-6">
+							<div class="main-intro">
+								<h1 class="h1">Неограниченный источник чистой питьевой воды!</h1>
+								<p class="subhead">Установим пурифайер и сэкономим 50% ваших денег на доставке бутилированной воды.</p>
+								<p class="subhead">Надёжные пурифайеры с ультрафиолетовой лампой.</p> 
+								<p class="subhead">100% защита от бактерий.</p>
+								<button class="btn base-btn" data-path="callback-form">Получить бесплатно на 14 дней</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -69,19 +72,19 @@
 					<div class="row justify-content-center">
 						<div class="col-10 col-md-4">
 							<div class="advantage-item">
-								<img src="img/icons/filter-sistem.png" alt="Система фильтрации">
+								<img class="responseimg" src="img/icons/filter-sistem.svg" alt="Система фильтрации">
 								<div>1 комплект фильтров <br>заменит 400 бутылей</div>
 							</div>
 						</div>
 						<div class="col-10 col-md-4">
 							<div class="advantage-item">
-								<img src="img/icons/14days.png" alt="14 дней">
+								<img class="responseimg" src="img/icons/14days.svg" alt="14 дней">
 								<div>Бесплатный пробный период <br>14 дней</div>
 							</div>
 						</div>
 						<div class="col-10 col-md-4">
 							<div class="advantage-item">
-								<img src="img/icons/garantiya.png" alt="Гарантия">
+								<img class="responseimg" src="img/icons/garantiya.svg" alt="Гарантия">
 								<div>Гарантируем качество <br>или вернём 110% от стоимости</div>
 							</div>
 						</div>
@@ -93,10 +96,10 @@
 		<section class="st about" id="osobennosti">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-2 text-center">
-						<img class="aboutimg" src="img/purifier-inside.png" alt="Пурифайер внутри">
+					<div class="d-none d-lg-block col-lg-2 text-center">
+						<img class="aboutimg responseimg" src="img/purifier-inside.png" alt="Пурифайер внутри">
 					</div>
-					<div class="col-7">
+					<div class="col-12 col-lg-7">
 						<div class="about-block">
 							<p class="about_text">Пурифайер это современный кулер внутри которого установлена профессиональная система
 								фильтрации.</p>
@@ -250,6 +253,9 @@
 				</div>
 
 			</div>
+			<div class="catalog-link">
+				<a href="#">Открыть страницу каталога</a>
+			</div>
 		</section>
 
 		<section class="st howwork" id="howwork">
@@ -316,7 +322,7 @@
 			<h2 class="h2">Мы ответим на все ваши вопросы</h2>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-lg-4">
+					<div class="col-10 col-md-6 col-lg-4">
 						<div class="question-item">
 							<img src="img/icons/question.svg" alt="Вопрос">
 							<h4 class="h4">Сложное подключение?</h4>
@@ -364,7 +370,7 @@
 			</div>
 		</section>
 
-		<section class="st stages" id="stages">
+		<!-- <section class="st stages" id="stages"> 
 			<h2 class="h2">Как мы работаем?</h2>
 			<div class="stages-wrap">
 				<div class="container-fluid">
@@ -403,7 +409,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
 		<section class="st why" id="why">
 			<h2 class="h2">Почему более 1700 клиентов выбрали нас?</h2>
@@ -478,19 +484,19 @@
 		</section>
 
 		<footer class="footer">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-lg-5">
+					<div class="col-12 col-lg-5">
 						<div class="contacts">
 							<h4 class="h4">Наши контакты:</h4>
 							<p><i class="icon-phone"></i> 8 (999) 244-25-42</p>
 							<p><i class="icon-mail"></i> support@inlinewater.ru</p>
 						</div>
-						<div class="copyright">
+						<div class="copyright d-none d-lg-block">
 							<p>© 2020 – Inlinewater.ru | Все права защищены.</p>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-12 col-lg-4">
 						<form id="footer-form" class="footer_form">
 							<h4 class="h4">Заполните форму, мы вам перезвоним:</h4>
 							<input type="text" name="name" placeholder="Ваше имя" class="form-input"><br>
@@ -498,12 +504,15 @@
 							<button type="submit" class="base-btn">Отправить</button>
 						</form>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-12 offset-lg-1 col-lg-2">
 						<h4 class="h4">Мы в соцсетях:</h4>
 						<div class="socialgroup">
 							<a class="social-item" href="#"><i class="icon-vkontakte"></i></a>
 							<a class="social-item" href="#"><i class="icon-facebook-squared"></i></a>
 							<a class="social-item" href="#"><i class="icon-instagram"></i></a>
+						</div>
+						<div class="copyright d-block d-lg-none">
+							<p>© 2020 – Inlinewater.ru | Все права защищены.</p>
 						</div>
 					</div>
 				</div>

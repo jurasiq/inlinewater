@@ -13,7 +13,7 @@ html body {
   font-size: 1.7rem;
   line-height: 140%;
   color: #444444;
-  padding-top: 84px;
+  padding-top: 71px;
 }
 
 .hidden {
@@ -26,15 +26,20 @@ html body {
   max-width: 100%;
 }
 
-.text-right {
-  text-align: right;
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #064ea7;
 }
 
 .h1 {
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 120%;
   margin-bottom: 2vh;
+  color: #444444;
 }
 
 .h2 {
@@ -57,8 +62,10 @@ html body {
 }
 
 .subhead {
-  font-size: 2.3rem;
-  margin: 0;
+  font-size: 2.2rem;
+  line-height: 120%;
+  color: #444444;
+  margin-bottom: 0.8rem;
 }
 
 .responseimg {
@@ -80,7 +87,7 @@ button:active, button:focus, button:hover {
   color: #444444;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.8rem;
-  margin-top: 4vh;
+  margin-top: 2rem;
   padding: 10px 30px;
   border-radius: 3rem;
 }
@@ -170,6 +177,11 @@ button:active, button:focus, button:hover {
   background-color: #fff;
   text-align: center;
   border-radius: 8px;
+  display: none;
+}
+
+.modal-overlay .modal--visible {
+  display: block;
 }
 
 .modal-overlay .modal .modal-close {
@@ -210,7 +222,6 @@ button:active, button:focus, button:hover {
 
 .header-main {
   position: relative;
-  height: 91vh;
 }
 
 .header-second {
@@ -228,9 +239,8 @@ button:active, button:focus, button:hover {
   top: 0;
   left: 0;
   right: 0;
-  height: 85px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#BCDDFC));
-  background: linear-gradient(180deg, #FFFFFF 0%, #BCDDFC 100%);
+  min-height: 70px;
+  background-color: #fff;
   z-index: 10;
 }
 
@@ -256,22 +266,18 @@ button:active, button:focus, button:hover {
   text-align: center;
 }
 
-.topmenu .nav ul li {
-  padding: 4px 8px;
-}
-
 .topmenu .nav ul li a {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #444444;
-  font-weight: 500;
 }
 
 .topmenu .phone {
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #064ea7;
   text-align: center;
+  padding: 10px 0;
 }
 
 .topmenu .phone .icon-phone {
@@ -280,8 +286,8 @@ button:active, button:focus, button:hover {
 
 .topmenu_overlay {
   position: absolute;
-  height: 8px;
-  bottom: -8px;
+  height: 6px;
+  bottom: -6px;
   left: 0;
   right: 0;
   background-color: rgba(6, 78, 167, 0.65);
@@ -294,28 +300,31 @@ button:active, button:focus, button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 6.5vh 0;
+  padding: 5rem 0;
 }
 
-.header-main .header_baner .h1 {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
+.header-main .header_baner .main-intro {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.35);
+          box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.35);
+  padding: 2rem;
 }
 
 .header-main .advantages {
-  padding: 0 0 4vh;
+  padding: 2rem 0 1rem;
 }
 
 .header-main .advantages .advantage-item {
   text-align: center;
   font-size: 2rem;
   line-height: 120%;
-  color: #064ea7;
-  margin: 2vh 0;
+  margin: 0 0 2rem;
 }
 
 .header-main .advantages .advantage-item img {
-  max-width: 250px;
+  max-width: 160px;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .about {
@@ -324,13 +333,8 @@ button:active, button:focus, button:hover {
 
 .about .aboutimg {
   width: auto;
-  max-height: 650px;
+  max-height: 610px;
   margin: auto;
-}
-
-.about .about-block {
-  margin-top: 1.5rem;
-  margin-left: 2rem;
 }
 
 .about .about-block .about_text {
@@ -360,7 +364,6 @@ button:active, button:focus, button:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 20px;
   padding: 1rem 0 3rem;
 }
 
@@ -373,7 +376,8 @@ button:active, button:focus, button:hover {
 
 .about .comparison .positive li {
   padding-left: 3rem;
-  line-height: 185%;
+  line-height: 120%;
+  margin-bottom: 1rem;
 }
 
 .about .comparison .positive li::before {
@@ -386,7 +390,8 @@ button:active, button:focus, button:hover {
 
 .about .comparison .negative li {
   padding-left: 3rem;
-  line-height: 185%;
+  line-height: 120%;
+  margin-bottom: 1rem;
 }
 
 .about .comparison .negative li::before {
@@ -414,10 +419,11 @@ button:active, button:focus, button:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .cleanstep-item .item-img {
-  max-width: 230px;
+  max-width: 170px;
   border: 4px solid #379b00;
   border-radius: 50%;
   overflow: hidden;
@@ -451,7 +457,6 @@ button:active, button:focus, button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-  width: 320px;
   padding: 16px;
 }
 
@@ -737,13 +742,16 @@ button:active, button:focus, button:hover {
   color: #ffc01e;
 }
 
-.questions {
-  background: -webkit-gradient(linear, left top, right top, from(#e7f2db), color-stop(15%, #FFFFFF), color-stop(85%, #FFFFFF), to(#e7f2db));
-  background: linear-gradient(90deg, #e7f2db 0%, #FFFFFF 15%, #FFFFFF 85%, #e7f2db 100%);
+.catalog-link {
+  text-align: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
-.questions .h2 {
-  color: #379b00;
+.questions {
+  background: -webkit-gradient(linear, left top, right top, from(#e6f0ff), color-stop(15%, #FFFFFF), color-stop(85%, #FFFFFF), to(#e6f0ff));
+  background: linear-gradient(90deg, #e6f0ff 0%, #FFFFFF 15%, #FFFFFF 85%, #e6f0ff 100%);
 }
 
 .question-item {
@@ -864,8 +872,6 @@ button:active, button:focus, button:hover {
 }
 
 .why {
-  background: -webkit-gradient(linear, left top, right top, from(#e6f0ff), color-stop(15%, #FFFFFF), color-stop(85%, #FFFFFF), to(#e6f0ff));
-  background: linear-gradient(90deg, #e6f0ff 0%, #FFFFFF 15%, #FFFFFF 85%, #e6f0ff 100%);
   text-align: center;
 }
 
@@ -939,7 +945,7 @@ button:active, button:focus, button:hover {
 }
 
 .googlemap {
-  height: 600px;
+  height: 500px;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -951,24 +957,23 @@ button:active, button:focus, button:hover {
 .footer {
   background-color: #686868;
   color: #fff;
-  padding: 5rem 0;
+  padding: 2rem 0 4rem;
 }
 
 .footer .contacts {
-  margin-left: 30px;
+  margin-bottom: 3rem;
 }
 
 .footer .h4 {
-  margin-bottom: 2rem;
+  margin: 4rem 0 2rem;
 }
 
 .footer .copyright {
-  margin-left: 30px;
   margin-top: 6.5rem;
 }
 
 .footer_form .form-input {
-  width: 55%;
+  width: 100%;
   padding: 6px 12px;
   background-color: #bdbdbd;
   border: none;
