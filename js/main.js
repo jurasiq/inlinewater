@@ -84,3 +84,9 @@ function closeModal(btn) {
 	btn.closest('.modal').classList.remove('modal--visible');
 	btn.closest('.modal-overlay').classList.remove('modal-overlay--visible')
 }
+
+$(".order-btn").click(function() {
+	var dataModel = $(this).data("model");
+	$("#order-form .modelname").text(dataModel);
+	$("#order-form [name=order-name]").val(dataModel);
+});

@@ -160,7 +160,7 @@
 					<div class="price"><span>Цена:</span>36 600 руб.</div>
 					<div class="order">
 						<span class="rent">14 дней на пробу</span>
-						<button class="order-btn">Заказать</button>
+						<button class="btn order-btn" data-path="order-form" data-model="Пурифайер A-60 U4L">Заказать</button>
 					</div>
 				</div>
 
@@ -182,7 +182,7 @@
 					<div class="price"><span>Цена:</span>36 600 руб.</div>
 					<div class="order">
 						<span class="rent">14 дней на пробу</span>
-						<button class="order-btn">Заказать</button>
+						<button class="btn order-btn" data-path="order-form" data-model="Пурифайер A-60 U4L">Заказать</button>
 					</div>
 				</div>
 
@@ -204,7 +204,7 @@
 					<div class="price"><span>Цена:</span>36 600 руб.</div>
 					<div class="order">
 						<span class="rent">14 дней на пробу</span>
-						<button class="order-btn">Заказать</button>
+						<button class="btn order-btn" data-path="order-form" data-model="Пурифайер A-60 U4L">Заказать</button>
 					</div>
 				</div>
 
@@ -226,7 +226,7 @@
 					<div class="price"><span>Цена:</span>36 600 руб.</div>
 					<div class="order">
 						<span class="rent">14 дней на пробу</span>
-						<button class="order-btn">Заказать</button>
+						<button class="btn order-btn" data-path="order-form" data-model="Пурифайер A-60 U4L">Заказать</button>
 					</div>
 				</div>
 
@@ -248,7 +248,7 @@
 					<div class="price"><span>Цена:</span>36 600 руб.</div>
 					<div class="order">
 						<span class="rent">14 дней на пробу</span>
-						<button class="order-btn">Заказать</button>
+						<button class="btn order-btn" data-path="order-form" data-model="Пурифайер A-60 U4L">Заказать</button>
 					</div>
 				</div>
 
@@ -520,6 +520,7 @@
 		</footer>
 
 		<div class="modal-overlay">
+
 			<div class="modal modal--1" data-target="callback-form">
 				<button class="btn modal-close" onclick="closeModal(this)"><i class="icon-cancel-circled"></i></button>
 				<form id="callback-form" class="modalform">
@@ -527,6 +528,21 @@
 					<input type="text" name="name" placeholder="Имя" class="form-input">
 					<input type="tel" name="phone" placeholder="Телефон" class="form-input">
 					<button type="submit" class="base-btn">Отправить</button>
+				</form>
+			</div>
+
+			<div class="modal modal--2" data-target="order-form">
+				<button class="btn modal-close" onclick="closeModal(this)"><i class="icon-cancel-circled"></i></button>
+				<form id="order-form" class="modalform">
+					<h2 class="h2-b">Вы хотите заказать <br><span class="modelname"></span>?</h2>
+					<input class="hidden" type="text" name="user" placeholder="">
+					<input class="hidden" type="text" name="username" placeholder="">
+					<input name="order-name" type="hidden">
+					<input type="text" name="name" placeholder="Ваше имя" class="form-input">
+					<input type="tel" name="phone" placeholder="Номер телефона" class="form-input">
+					<input type="email" name="email" placeholder="Ваш e-mail" class="form-input">
+					<textarea name="comment" rows="4" placeholder="Комментарий..." class="form-input"></textarea>
+					<button type="submit" class="base-btn">Отправить заказ</button>
 				</form>
 			</div>
 		</div>
